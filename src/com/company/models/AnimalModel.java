@@ -2,10 +2,10 @@ package com.company.models;
 
 import com.company.util.Functions;
 
-public class Dogs extends Animals implements Functions  {
+public class AnimalModel extends Animals implements Functions {
 
 
-    public Dogs(String name, Integer tails, Integer legs, String feet, String soundMade, String lactatingPeriod, String pregnancyPeriod) {
+    public AnimalModel(String name, Integer tails, Integer legs, String feet, String soundMade, String lactatingPeriod, String pregnancyPeriod) {
         super(name, tails, legs, feet, soundMade, lactatingPeriod, pregnancyPeriod);
     }
 
@@ -41,13 +41,14 @@ public class Dogs extends Animals implements Functions  {
 
     @Override
     public String toString() {
-        return "Dogs{" +
-                "tails=" + tails +
-                ", legs=" + legs +
-                ", feet='" + feet + '\'' +
-                ", soundMade='" + soundMade + '\'' +
-                ", lactatingPeriod='" + lactatingPeriod + '\'' +
-                ", pregnancyPeriod='" + pregnancyPeriod + '\'' +
+        return "The Animals {" +
+                "\nname='" + name + '\'' +
+                "\n tails=" + tails +
+                "\n legs=" + legs +
+                "\n feet='" + feet + '\'' +
+                "\n soundMade='" + soundMade + '\'' +
+                "\n lactatingPeriod='" + lactatingPeriod + '\'' +
+                "\n pregnancyPeriod='" + pregnancyPeriod + '\'' +
                 '}';
     }
 }

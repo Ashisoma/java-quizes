@@ -3,8 +3,10 @@ package com.company.models;
 import com.company.util.Functions;
 
 public class Cats extends Animals implements Functions {
-    public Cats() {
-        super(1, 4, "Paw", "Meow", "2 Months", "1 Month");
+
+
+    public Cats(String name, Integer tails, Integer legs, String feet, String soundMade, String lactatingPeriod, String pregnancyPeriod) {
+        super(name, tails, legs, feet, soundMade, lactatingPeriod, pregnancyPeriod);
     }
 
     @Override

@@ -4,8 +4,9 @@ import com.company.util.Functions;
 
 public class Goats extends Animals implements Functions {
 
-    public Goats() {
-        super(1, 4, "Paw", "Rabbit", "3 Months", "2 Months");
+
+    public Goats(String name, Integer tails, Integer legs, String feet, String soundMade, String lactatingPeriod, String pregnancyPeriod) {
+        super(name, tails, legs, feet, soundMade, lactatingPeriod, pregnancyPeriod);
     }
 
     @Override
